@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Detail Event — PT Nusa Inspira Teknologi." />
+<title>Detail Event | PT Nusa Inspira Teknologi</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="icon" type="image/png" href="assets/favicon.png" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body data-page="events">
+
+<script src="partials/nav.js"></script>
+
+<div class="ed-breadcrumb">
+  <div class="ed-breadcrumb-inner">
+    <a href="events.html">Events</a>
+    <span>&rsaquo;</span>
+    <a href="events.html">Upcoming Events</a>
+    <span>&rsaquo;</span>
+    <span id="ed-crumb-title">Detail Acara</span>
+  </div>
+</div>
+
+<section class="section ed-section">
+  <div class="ed-layout">
+
+    <div class="ed-main">
+      <div class="ed-hero">
+        <span class="ed-hero-tag" id="ed-tag">Webinar</span>
+        <h1 id="ed-title">Memuat...</h1>
+        <p id="ed-desc-short"></p>
+        <div class="ed-hero-meta">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="17" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="7" y1="2" x2="7" y2="6"/><line x1="17" y1="2" x2="17" y2="6"/></svg><span id="ed-date"></span></span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span id="ed-time"></span></span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 12h.01"/></svg><span id="ed-location"></span></span>
+        </div>
+        <div class="ed-hero-visual">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="4" y="4" width="56" height="56" rx="10"/><path d="M22 40l8-10 6 8 8-12"/></svg>
+        </div>
+      </div>
+
+      <div class="ed-card">
+        <h3>Tentang Acara</h3>
+        <p id="ed-about"></p>
+      </div>
+
+      <div class="ed-twocol">
+        <div class="ed-card">
+          <h3>Agenda</h3>
+          <ul class="ed-agenda" id="ed-agenda"></ul>
+        </div>
+        <div class="ed-card">
+          <h3>Anda akan mendapatkan</h3>
+          <ul class="ed-benefits" id="ed-benefits"></ul>
+        </div>
+      </div>
+
+      <div class="ed-card">
+        <h3>Pembicara</h3>
+        <div class="ed-speakers" id="ed-speakers"></div>
+      </div>
+    </div>
+
+    <aside class="ed-sidebar">
+      <div class="ed-card ed-cta-card">
+        <h3>Siap bergabung?</h3>
+        <p>Daftarkan diri Anda sekarang dan dapatkan akses ke materi eksklusif serta sesi interaktif bersama ahlinya.</p>
+        <a href="produk-edulyfe.html" class="ed-regist-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          <span>Daftar Sekarang di Edulyfe.id</span>
+        </a>
+        <p class="ed-cta-note">Anda akan diarahkan ke <strong>edulyfe.id</strong> untuk proses pendaftaran dan pembayaran.</p>
+        <div class="ed-trust-row">
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>Pembayaran Aman</span></div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/><path d="M8.5 14 7 22l5-3 5 3-1.5-8"/></svg><span>E-sertifikat Resmi</span></div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg><span>Dukungan Peserta</span></div>
+        </div>
+      </div>
+
+      <div class="ed-card ed-info-card">
+        <h3>Informasi Acara</h3>
+        <dl class="ed-info-list">
+          <div><dt><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="17" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/></svg>Tanggal</dt><dd id="ed-info-date"></dd></div>
+          <div><dt><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Waktu</dt><dd id="ed-info-time"></dd></div>
+          <div><dt><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="6" width="20" height="12" rx="2"/></svg>Lokasi</dt><dd id="ed-info-location"></dd></div>
+          <div><dt><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/></svg>Tiket</dt><dd id="ed-info-price"></dd></div>
+          <div><dt><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M16 3v4M8 3v4"/></svg>Kategori</dt><dd id="ed-info-category"></dd></div>
+          <div><dt><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/></svg>Penyelenggara</dt><dd>Nusa Inspira Teknologi</dd></div>
+        </dl>
+      </div>
+
+      <div class="ed-card ed-help-card">
+        <h3>Butuh bantuan?</h3>
+        <p>Hubungi kami jika Anda memiliki pertanyaan seputar acara ini.</p>
+        <a href="mailto:events@nusainspira.co.id">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>events@nusainspira.co.id</span>
+        </a>
+      </div>
+    </aside>
+
+  </div>
+</section>
+
+<script>
+  var EVENTS = {
+    "ai-diagnostic-pembelajaran-bahasa": {
+      tag: "Webinar",
+      date: "15 September 2026",
+      time: "09.00 - 11.30 WIB",
+      location: "Online via Zoom",
+      price: "Rp 99.000",
+      category: "Webinar Pendidikan",
+      title: "AI Diagnostic dalam Pembelajaran Bahasa",
+      shortDesc: "Sesi berbagi seputar teknologi diagnostik AI pada program English Inspira, terbuka untuk pendidik dan pelajar.",
+      about: "Webinar ini membahas bagaimana teknologi Artificial Intelligence dapat digunakan untuk diagnostik kemampuan bahasa secara akurat dan efisien. Melalui studi kasus pada program English Inspira, peserta akan mendapatkan gambaran praktik implementasi AI dalam dunia pendidikan yang relevan dan aplikatif.",
+      agenda: [
+        ["09.00 - 09.15", "Pembukaan"],
+        ["09.15 - 10.00", "AI dalam Diagnostik Pembelajaran Bahasa"],
+        ["10.00 - 10.45", "Studi Kasus: Implementasi di English Inspira"],
+        ["10.45 - 11.15", "Tanya Jawab"],
+        ["11.15 - 11.30", "Penutupan"]
+      ],
+      benefits: [
+        "Wawasan terbaru seputar AI dalam pendidikan",
+        "Pemahaman konsep dan metode diagnostik AI",
+        "Studi kasus nyata dari program English Inspira",
+        "E-sertifikat untuk seluruh peserta",
+        "Materi webinar (PDF)"
+      ],
+      speakers: [
+        { name: "Dr. Andini Putri, M.Pd.", role: "AI in Education Specialist", bio: "Pengembang program diagnostik AI pada English Inspira." },
+        { name: "Rizky Pratama, S.T.", role: "Machine Learning Engineer", bio: "Tim pengembang sistem AI dan analitik pembelajaran." }
+      ]
+    },
+    "membangun-learning-path": {
+      tag: "Workshop",
+      date: "28 September 2026",
+      time: "09.00 - 12.00 WIB",
+      location: "Online via Zoom",
+      price: "Rp 149.000",
+      category: "Workshop Kurikulum",
+      title: "Membangun Learning Path yang Terstruktur",
+      shortDesc: "Workshop bersama tim Edulyfe untuk pengelola program pelatihan dan penyusun kurikulum digital.",
+      about: "Workshop ini mengajak peserta untuk berlatih menyusun learning path yang runtut dan terukur, mulai dari analisis kebutuhan belajar, penyusunan tahapan materi, hingga evaluasi capaian pembelajaran pada ekosistem Edulyfe.",
+      agenda: [
+        ["09.00 - 09.15", "Pembukaan"],
+        ["09.15 - 10.15", "Prinsip Penyusunan Learning Path"],
+        ["10.15 - 11.15", "Praktik Menyusun Kurikulum Bertahap"],
+        ["11.15 - 11.45", "Tanya Jawab"],
+        ["11.45 - 12.00", "Penutupan"]
+      ],
+      benefits: [
+        "Template learning path siap pakai",
+        "Panduan menyusun kurikulum bertahap",
+        "Sesi konsultasi singkat dengan tim Edulyfe",
+        "E-sertifikat untuk seluruh peserta",
+        "Materi workshop (PDF)"
+      ],
+      speakers: [
+        { name: "Vina Kartika, M.Kom.", role: "Instructional Designer", bio: "Penyusun kurikulum digital pada ekosistem Edulyfe." }
+      ]
+    },
+    "klinik-tata-kelola-it": {
+      tag: "Konsultansi",
+      date: "10 Oktober 2026",
+      time: "13.00 - 15.00 WIB",
+      location: "Online via Zoom",
+      price: "Gratis",
+      category: "Klinik Konsultansi",
+      title: "Klinik Tata Kelola IT untuk Organisasi",
+      shortDesc: "Sesi konsultasi terbuka bersama tim Inspira Teknologi seputar strategi dan tata kelola infrastruktur IT.",
+      about: "Sesi konsultasi terbuka ini dirancang bagi organisasi yang ingin mendapatkan masukan langsung mengenai strategi teknologi, tata kelola IT, dan langkah optimalisasi infrastruktur yang sesuai dengan kebutuhan bisnis.",
+      agenda: [
+        ["13.00 - 13.10", "Pembukaan"],
+        ["13.10 - 14.00", "Pemaparan Praktik Tata Kelola IT"],
+        ["14.00 - 14.45", "Sesi Konsultasi Terbuka"],
+        ["14.45 - 15.00", "Penutupan"]
+      ],
+      benefits: [
+        "Masukan langsung dari tim Inspira Teknologi",
+        "Checklist tata kelola IT organisasi",
+        "Kesempatan konsultasi lanjutan",
+        "E-sertifikat kehadiran"
+      ],
+      speakers: [
+        { name: "Faisal Ramadhan, S.Kom., M.T.", role: "IT Governance Consultant", bio: "Konsultan tata kelola IT pada Inspira Teknologi." }
+      ]
+    },
+    "call-for-story-inspirasiya": {
+      tag: "Publikasi",
+      date: "22 Oktober 2026",
+      time: "Sepanjang hari",
+      location: "Daring / Pengumpulan Naskah",
+      price: "Gratis",
+      category: "Publikasi & Media",
+      title: "Call for Story: Kisah Inspiratif Inspirasiya",
+      shortDesc: "Ajakan berbagi kisah, inovasi, dan pencapaian untuk dipublikasikan pada platform Inspirasiya.",
+      about: "Program ini mengajak individu maupun organisasi untuk membagikan kisah inspiratif, inovasi, dan pencapaian yang akan dipublikasikan melalui platform Inspirasiya agar dapat memberikan manfaat dan inspirasi bagi masyarakat luas.",
+      agenda: [
+        ["Tahap 1", "Pengumpulan naskah"],
+        ["Tahap 2", "Kurasi dan seleksi oleh tim redaksi"],
+        ["Tahap 3", "Proses editorial"],
+        ["Tahap 4", "Publikasi di Inspirasiya"]
+      ],
+      benefits: [
+        "Publikasi resmi di platform Inspirasiya",
+        "Eksposur kisah ke pembaca yang lebih luas",
+        "Pendampingan editorial dari tim redaksi",
+        "Sertifikat publikasi"
+      ],
+      speakers: [
+        { name: "Tim Redaksi Inspirasiya", role: "Editorial Team", bio: "Mengelola kurasi dan publikasi konten Inspirasiya." }
+      ]
+    },
+    "persiapan-toefl-itp": {
+      tag: "Webinar",
+      date: "5 November 2026",
+      time: "19.00 - 21.00 WIB",
+      location: "Online via Zoom",
+      price: "Rp 79.000",
+      category: "Webinar Bahasa Inggris",
+      title: "Persiapan TOEFL ITP: Strategi Skor Optimal",
+      shortDesc: "Webinar bersama tim English Inspira membahas strategi belajar efektif menjelang tes TOEFL ITP resmi.",
+      about: "Webinar ini membahas strategi belajar yang efektif untuk menghadapi TOEFL ITP, mencakup teknik mengerjakan tiap bagian tes, manajemen waktu, serta tips memaksimalkan skor berdasarkan pengalaman program English Inspira.",
+      agenda: [
+        ["19.00 - 19.15", "Pembukaan"],
+        ["19.15 - 20.00", "Strategi Listening & Structure"],
+        ["20.00 - 20.40", "Strategi Reading & Manajemen Waktu"],
+        ["20.40 - 21.00", "Tanya Jawab & Penutupan"]
+      ],
+      benefits: [
+        "Strategi menjawab tiap bagian TOEFL ITP",
+        "Tips manajemen waktu saat ujian",
+        "Rekomendasi latihan lanjutan",
+        "E-sertifikat untuk seluruh peserta"
+      ],
+      speakers: [
+        { name: "Michelle Tanjung, M.Ed.", role: "TOEFL Instructor", bio: "Pengajar utama program English Inspira." }
+      ]
+    },
+    "coding-kreativitas-digital-remaja": {
+      tag: "Workshop",
+      date: "18 November 2026",
+      time: "09.00 - 12.00 WIB",
+      location: "Hotel XY, Bandung",
+      price: "Rp 199.000",
+      category: "Workshop Coding",
+      title: "Coding & Kreativitas Digital untuk Remaja",
+      shortDesc: "Workshop pengenalan dasar coding dan pengembangan proyek kreatif digital untuk peserta usia sekolah.",
+      about: "Workshop ini mengenalkan logika pemrograman dasar kepada peserta usia sekolah melalui metode visual yang interaktif, dilanjutkan dengan praktik langsung membuat proyek kreatif digital sederhana.",
+      agenda: [
+        ["09.00 - 09.20", "Pembukaan & Perkenalan"],
+        ["09.20 - 10.30", "Pengenalan Logika Pemrograman Visual"],
+        ["10.30 - 11.30", "Praktik Membuat Proyek Kreatif"],
+        ["11.30 - 12.00", "Presentasi Karya & Penutupan"]
+      ],
+      benefits: [
+        "Pengenalan dasar coding secara visual",
+        "Pendampingan langsung dari mentor",
+        "Proyek kreatif digital hasil karya sendiri",
+        "E-sertifikat untuk seluruh peserta"
+      ],
+      speakers: [
+        { name: "Dimas Aditya, S.Kom.", role: "Coding Instructor", bio: "Fasilitator program Inspira Innovation untuk remaja." }
+      ]
+    }
+  };
+
+  var id = new URLSearchParams(window.location.search).get('id');
+  var data = EVENTS[id];
+
+  function fillList(elId, items, renderer) {
+    var el = document.getElementById(elId);
+    el.innerHTML = items.map(renderer).join('');
+  }
+
+  if (data) {
+    document.title = data.title + " | PT Nusa Inspira Teknologi";
+    document.getElementById('ed-crumb-title').textContent = data.title;
+    document.getElementById('ed-tag').textContent = data.tag;
+    document.getElementById('ed-title').textContent = data.title;
+    document.getElementById('ed-desc-short').textContent = data.shortDesc;
+    document.getElementById('ed-date').textContent = data.date;
+    document.getElementById('ed-time').textContent = data.time;
+    document.getElementById('ed-location').textContent = data.location;
+    document.getElementById('ed-about').textContent = data.about;
+
+    document.getElementById('ed-info-date').textContent = data.date;
+    document.getElementById('ed-info-time').textContent = data.time;
+    document.getElementById('ed-info-location').textContent = data.location;
+    document.getElementById('ed-info-price').textContent = data.price;
+    document.getElementById('ed-info-category').textContent = data.category;
+
+    fillList('ed-agenda', data.agenda, function (item) {
+      return '<li><span class="ed-agenda-time">' + item[0] + '</span><span>' + item[1] + '</span></li>';
+    });
+    fillList('ed-benefits', data.benefits, function (text) {
+      return '<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>' + text + '</span></li>';
+    });
+    fillList('ed-speakers', data.speakers, function (sp) {
+      return '<div class="ed-speaker"><div class="ed-speaker-avatar"></div><div><h5>' + sp.name + '</h5><span class="ed-speaker-role">' + sp.role + '</span><p>' + sp.bio + '</p></div></div>';
+    });
+  } else {
+    document.getElementById('ed-title').textContent = "Event tidak ditemukan";
+    document.getElementById('ed-desc-short').textContent = "Event yang Anda cari tidak tersedia. Silakan kembali ke halaman Events.";
+    document.querySelectorAll('.ed-card, .ed-sidebar').forEach(function (el) { el.style.display = 'none'; });
+  }
+</script>
+
+<script src="partials/footer.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>
